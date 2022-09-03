@@ -1,0 +1,212 @@
+<html>
+<head>
+        <title>Chopie</title>
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <meta name="author" content="Nihche">
+        <meta charset="UTF-8">
+        <meta name="description" content="Simple game">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+        <div id="cce">
+        <div id="banner"> 
+            <h1>Chopie</h1>
+            </div>
+        <form>
+            <div id="top">   
+                <div class="top" id="stats">
+             
+                Vas denar:<a id="dnar" class="izpis"></a><br>
+                <div id="krom">
+                    
+                    Krompir:(<a id="krompir" class="izpis"></a>/
+                    <a id="skladk" class="izpis"></a>)
+                    <div id="prog">
+                        <div id="progs">
+                            <div id="progt"></div>
+                        </div>
+                        
+                    </div>
+                    <!--<progress id="kropro" min="0" max="" value=""></progress>-->
+                    
+                </div>
+             
+                <div id="gozdarjev">
+                    Gozdarjev:<a id="jack" class="izpis"></a><br>   
+                    MadJack:<a id="cjack" class="izpis"></a>
+                    |LazyJack:<a id="ljack" class="izpis"></a>
+                    |TryHardJack:<a id="tjack" class="izpis"></a><hr> 
+                </div>
+             
+                    <div id="ves_les">Količina pridelanega lesa:<a id="vse"></a></div> 
+        </div>
+            
+                <div class="top" id="Drvarnica">
+        
+                
+                
+            
+            <center><div class="seka" id="slika_seka" onclick="chop()"><a id="skke"></a></div></center>   
+                
+            <center>Lesa:<a id="izpis" class="izpis"></a><br>Lesa na sekundo:<a id="nasek" class="izpis"></a></center><br>
+                <br>
+            
+            
+            
+            
+        </div>      
+            
+                <div class="top" id="nadgradnja">
+                    
+                  
+                    <br>
+                    <div class="gumb" id="gozdar" onclick="lumberjack()">Cena enega Gozdarja:<a id="cena" class="izpis"></a></div> 
+                    <br><hr>
+    Prevoz lesa v prodajo:
+                    <div class="gumb" id="prevoz" onclick="prevoz()">Max. lesa<a id="prez" class="izpis"></a></div>
+                    <br>
+                    <div id="prv">
+                        <div id="prev">
+                            <div id="prevo"></div>
+                        </div>
+                        
+                    </div>
+                    Količina lesa: <a id="kolipr"></a>
+                    <a id="prvv"></a>
+                 
+        </div> 
+            
+            </div>  
+          <div id="jedro">  
+
+            <div id="modal_button">
+                
+              <a id="modb" href="#openModal1">Nadgradnje</a><br><br>
+              <a id="modb" href="#openModal2">Tržnica</a><br><br>
+              <a id="modb" href="#openModal3">Banka</a><br><br>
+              <a id="modb" href="#openModal4">Shrani</a>
+         
+              </div>  
+              
+            <div id="modal">
+            <div id="openModal1" class="modalDialog">
+            <div id="modal_stuff">
+            
+                <div id="nadgradnje">
+                <div class="nadgradnja" id="nadgradnje gozdarjev">Nadgradnje gozdarjev:
+                    
+                        <div class="gumb" id="talev" onclick="talent()">Iskalec talentov:<a id="ttcena" class="izpis"></a></div>
+                    
+                        <div class="gumb" id="nadgra" onclick="nadgrad()">+<a id="nadge"></a>*10%|<a id="moz" class="izpis"></a>|<a id="ucena"></a></div>
+                    
+                    </div>
+                    
+                <div class="nadgradnja" id="nadgradnje skladišča">Nadgradnje sladišča/ prevoza:
+                    
+                        <div class="gumb" id="kronad" onclick="krosklad()">Nadgradi skladišče:<a id="krocc" class="izpis"></a></div>
+                    
+                        <div class="gumb" id="nad_truck" onclick="truck_nad()">Nadgradi tovornjak:<a id="cena_nad_truck"></a></div>
+                        
+                        <div class="gumb" id="auto_truck" onclick="truck_auto()">Samodejni prevoz:<a id="auto_truck"></a></div>
+                    
+                    </div> 
+                <div class="nadgradnja" id="nadgradnje banke">Nadgradnje banke:
+                    
+                        <div class="gumb" id="nadban" onclick="nadbank()">
+                        Nadgradnja banke:
+                        <a id="bank_cena" class="izpis"></a></div>
+                    
+                    </div> 
+                    
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                <div id="Grad">
+                    <br>
+                    <br>
+                    <br>
+                <h3>Zlata sekira(cena 1000000 denarja)</h3>
+                
+                    <div class="gumb" id="grad" onclick="grad()">Kupi zlato sekiro. </div> 
+                    <div id="gradd">Stevilo sekir:<a id="grd" class="izpis"></a></div>
+             <br>
+                    
+            </div>
+                    
+                </div>
+                
+                
+            </div>
+            </div>
+              
+
+            <div id="openModal2" class="modalDialog">
+            <div id="modal_stuff">
+                
+            
+            <div  id="trznica">  
+                <div id="skladisce_les">
+                </div>
+                <h2>Trznica</h2>   
+                    Les v prodaji:    
+                    <div class="izpis"><a id="prodaja"></a> </div> 
+                    <br><br>
+     
+                    <hr>
+                    <h3>Krompir</h3>
+                    <div class="gumb" id="krosto" onclick="krompir2()">Kupi 100 krompirja. Cena 25</div>
+                    <br>
+                    <div class="gumb" id="krotis" onclick="krompir1()">Kupi 10.000 krompirja. Cena 2500</div>
+                <br>
+                
+            
+                    <br>
+            
+            </div>
+                
+            </div>
+         </div>
+                
+                <div id="openModal3" class="modalDialog">
+            <div id="modal_stuff">
+                
+                    
+                    <div id="Banka">
+                <h2>Banka</h2>
+                   Vložen denar:<a id="vloga"></a><br>
+                    Bancni racun:<a id="polog" class="izpis"></a>
+                
+                <div id="bank">
+                    <div class="gumb"  onclick="obresti()" >Polozite denar<br></div>     
+                    
+                    <div class="gumb" id="dvig"  onclick="dvig()" >Dvigni denar=<a id="obrest"></a></div>     
+                </div>
+              </div>
+                
+            </div>
+         </div>
+              
+               <div id="openModal4" class="modalDialog">
+            <div id="modal_stuff">
+               
+                  
+                    <div class="bot"  id="Shrani">
+                        <div id="top_meni">
+                             <div class="gumb" id="load"  onclick="load()" >naloži<a id="shrani"></a></div><br>
+                            <div class="gumb" id="sharni"  onclick="storage()" >Shrani<a id="shrani"></a></div>
+                        </div>
+                    
+            </div>
+                
+            </div>
+         </div> 
+                
+        </div> 
+        
+            </div> 
+        </form>
+        
+            
+            <script src="main.js"></script>
+    </div>    
+</body>
+</html>

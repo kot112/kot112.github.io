@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Naključje</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Game site">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Nihche">
+    <link rel="stylesheet" type="text/css" href="nakljucje.css" />
+</head>
+<body>
+<div id="evry">    
+    <div id="jedro_k">
+         <form>
+    <div id="rezultat">
+        <center>
+            <h1></h1>
+            <h1>Stage:<a id="stage">0</a></h1>
+            <a>Računalnik: <a id="nasp"></a></a>
+            <progress id="nm" min="0" max="5" value="" ></progress><a id="nnm"></a>
+            <hr />
+            <a>Ti: <a id="player"></a></a>
+            <progress id="mm" min="0" max="5" value="" ></progress><a id="mmm"></a>
+            <br />
+            <a id="rez"></a>
+            <hr />
+            Izberi svoj odgovor:
+            
+        </center>
+    </div>
+    <div id="arena">
+        
+    
+        
+        <center>
+            <input type="button"  value="Kamen" onclick="mec()" >
+        <input type="button"  value="Škarje" onclick="lok()" />
+        <input type="button"  value="Papir" onclick="palica()" /><hr />
+            Wins:<p id="win"></p><br />
+            <p id="lose"></p><hr/>
+            <a id="start"></a>
+        </center> 
+    </div>
+    </form>
+    </div>
+    </div> 
+<script src="naklucje.js" ></script>    
+</body>
+</html>

@@ -1,0 +1,194 @@
+body{   
+    background-color:gray;
+    overflow: hidden;
+    height: 100%;
+    margin-top: 0;
+    margin-left: 10em;
+    margin-right: 10em;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+@media (max-width: 1200px){
+    body{
+        margin: 0%;
+    }
+}
+/*header*/
+.header{
+    position: inherit;
+    display: flex;
+    height: 5%;
+    background-color: black;
+}
+#meni_show{
+    flex:0.05;
+    position: inherit;
+    font-size: 200%;
+    text-align: center;
+    z-index: 1;
+    border-right: 1px solid gray;
+}
+.top{
+    
+    display: inline-block;
+    color: white;
+}
+.top_text{
+    position: absolute;
+    font-size: 100%;
+    padding-left: 0.9em;
+}
+/*header END*/
+.site{
+    display: flex;
+    height: 95%;;
+}
+/*meni*/
+.navig{
+    display: none;
+    flex:1.2;
+
+}
+#meni{
+    border-right: solid 1px gray;
+    background-color: whitesmoke;
+    box-shadow: 3px 0px 15px gray;
+    z-index: 1;
+}
+/*meniEND*/
+/*modal*/
+.all_mod{
+    flex:4;
+    background-color: whitesmoke;
+}
+.modal_content{
+    width: 100%;
+}
+.modalDialog {
+        display: none;    
+}
+.modalDialog:target {
+        display: block;
+}
+/*Buttons*/
+.button_author{
+    cursor: pointer;
+    text-align: center;
+    padding-top: 5%;
+    width: 95%;
+    height: 4%;
+    font-size:130%;
+    text-decoration: none;
+    -moz-box-shadow:    inset 0 0 5px grey;
+   -webkit-box-shadow: inset 0 0 5px grey;
+   box-shadow:         inset 0 0 5px grey;
+    background-color: white;
+    color:black;
+    margin: 2;
+    border-radius: 10px;
+}
+.button_author:hover{
+    cursor: pointer;
+    text-align: center;
+    padding-top: 5%;
+    width: 95%;
+    height: 4%;
+    font-size:131%;
+    text-decoration: none;
+    -moz-box-shadow:    inset 0 0 7px grey;
+    -webkit-box-shadow: inset 0 0 7px grey;
+    box-shadow:         inset 0 0 7px grey;
+    background-color: grey;
+    color:whitesmoke;
+    margin: 2;
+}
+.button_meni{
+    cursor: pointer;
+    text-align: center;
+    padding-top: 5%;
+    width: 95%;
+    height: 4%;
+    font-size:140%;
+    text-decoration: none;
+    -moz-box-shadow:    inset 0 0 5px grey;
+   -webkit-box-shadow: inset 0 0 5px grey;
+   box-shadow:         inset 0 0 5px grey;
+    background-color: black;
+    color:whitesmoke;
+    margin: 2;
+    border-radius:15px;
+}
+.button_meni:hover{
+    cursor: pointer;
+    text-align: center;
+    padding-top: 5%;
+    width: 95%;
+    height: 4%;
+    font-size:141%;
+    text-decoration: none;
+    -moz-box-shadow:    inset 0 0 7px grey;
+    -webkit-box-shadow: inset 0 0 7px grey;
+    box-shadow:         inset 0 0 7px grey;
+    background-color: grey;
+    color:whitesmoke;
+    margin: 2;
+    border-radius:15px;
+}
+.button_download{
+    cursor: pointer;
+    text-align: center;
+    padding: 5%;
+    width: 95%;
+    height: 10%;
+    font-size:100%;
+    text-decoration: none;
+    -moz-box-shadow:    inset 0 0 5px grey;
+   -webkit-box-shadow: inset 0 0 5px grey;
+   box-shadow:         inset 0 0 5px grey;
+    background-color: lightgray;
+    color:black;
+    margin: 2;
+    border-radius:15px;
+}
+.button_download:hover{
+    cursor: pointer;
+    text-align: center;
+    padding-top: 5%;
+    width: 95%;
+    height: 5%;
+    font-size:100%;
+    text-decoration: none;
+    -moz-box-shadow:    inset 0 0 7px grey;
+    -webkit-box-shadow: inset 0 0 7px grey;
+    box-shadow:         inset 0 0 7px grey;
+    background-color: gray;
+    color:white;
+    margin: 2;
+    border-radius:15px;
+}
+.modb{
+    text-decoration: none;
+}
+/*Content*/
+.downloads{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+#frame_author{
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
+.frame_html{
+    overflow: hidden;
+    border: 0;
+    height: 100%;
+    width: 100%;
+}

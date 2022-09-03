@@ -1,0 +1,67 @@
+//vesolje
+let space_oc = [
+    ["empty", "none", 0, 0],// false-zasedenost, item, cas, končn cs
+    ["empty", "none", 0, 0]
+];
+let items = [
+    ["black_hole", 3],// item, st_item
+    ["sun", 0]
+];
+var ves_id = document.getElementById("vesolje");
+    vesolje_space();
+
+function vesolje_space(){
+    for(i=0; i< space_oc.length;i++){
+        var crt_space = document.createElement("DIV");
+    crt_space.setAttribute("class", "vesolje_el");
+    crt_space.setAttribute("id", "space" + i);
+    crt_space.setAttribute("onclick", "vesolje_click(" + i + ")");
+    ves_id.appendChild(crt_space);     
+    }
+}
+let c_item = "none";
+function inven(item){
+    switch (item){
+        case 0:
+            document.body.style.cursor = "cell";
+            c_item = "black_hole";
+            break;
+    }
+}
+function vesolje_click(id_ves){
+    document.body.style.cursor = "default";
+    if(space_oc[id_ves][0] === "empty"){
+    switch (c_item){
+        case "black_hole":
+            if(items[0][1]>=1){
+            items[0][1]--;
+            c_item = "none";
+            space_oc[id_ves][0] = "exist";
+            space_oc[id_ves][1] = "black_hole";
+            space_oc[id_ves][2] = 10;
+            document.getElementById("space" + id_ves).innerHTML = space_oc[id_ves][3];
+            }
+        }
+    }else if(space_oc[id_ves][0] === "done"){
+            items[0][1]++;
+            reset_vesolje(id_ves);   
+    }
+}
+function vesolje_time(){
+    for(i=0;i<space_oc.length; i++){
+        if(space_oc[i][0] === "exist"){
+            space_oc[i][3]++;
+            document.getElementById("space" + i).innerHTML = space_oc[i][3];
+            if(space_oc[i][3] === space_oc[i][2]){
+                space_oc[i][0] = "done";
+            }
+        }
+    } 
+}
+function reset_vesolje(id_ves_rst){
+    space_oc[id_ves_rst][0] = "emtpy";
+    space_oc[id_ves_rst][1] = "none";
+    space_oc[id_ves_rst][2] = 0;
+    space_oc[id_ves_rst][3] = 0;
+    console.log(space_oc);
+}

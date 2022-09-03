@@ -1,0 +1,366 @@
+body{   
+    background-color:gray;
+    overflow: hidden;
+    margin:0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+.modal_zero{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color:darkgray;
+    z-index: 0;
+}
+.modal_stfu{
+    position:fixed;
+    background-color: whitesmoke;
+    margin-left: 2%;
+    width: 90%;
+    height: 96.2%;
+    overflow: auto;
+    z-index: 1;
+}
+
+@media (max-width: 700px){
+    body{
+        margin: 0%;
+    }
+    .modal_stfu{
+        width: 85%;
+        margin-left: 2px; 
+    }
+    .modal_zero{
+        width: 100%;
+    }
+}
+.icon_top{
+    margin-right: 2%;
+    height: 1.8em;
+}
+#min_d_mat{
+    height: 2em;
+    background-color: whitesmoke;
+    border-bottom: 1px solid;
+    position: relative;
+    text-align: end;
+    padding-right: 1%;
+    z-index: 2; 
+}
+.izpis{
+    font-size:1.7em;
+}
+#spod_meni_gumb{
+    position: fixed;
+    z-index: 1;
+    right:20;
+}
+.modb_cls{
+    position: absolute;
+    right: 5;
+    text-align: end;
+}
+#story_buttons{
+    display: inline-block;
+}
+.modb{
+    font-size: 130%;
+    display: inline-block;
+    width: 2.5em;
+    height: 2em;
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+    text-decoration: none;
+    background-color: black;
+    -moz-box-shadow:    inset 0 0 5px grey;
+   -webkit-box-shadow: inset 0 0 5px grey;
+   box-shadow:         inset 0 0 5px grey;
+    border-radius: 30px;
+}
+.modb:hover{
+    cursor: pointer;
+    background-color: grey;
+   -moz-box-shadow:    inset 0 0 7px darkgrey;
+   -webkit-box-shadow: inset 0 0 7px darkgrey;
+   box-shadow:         inset 0 0 7px darkgrey;
+}
+.modb_zg{
+    font-size: 130%;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    margin-right: 0.1em;
+    display: inline-block;
+    width: auto;
+    height: 1.5em;
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+    text-decoration: none;
+    background-color: black;
+    -moz-box-shadow:    inset 0 0 5px grey;
+   -webkit-box-shadow: inset 0 0 5px grey;
+   box-shadow:         inset 0 0 5px grey;
+    border-radius: 10px;
+}
+.modb_zg:hover{
+    cursor: pointer;
+    background-color: grey;
+   -moz-box-shadow:    inset 0 0 7px darkgrey;
+   -webkit-box-shadow: inset 0 0 7px darkgrey;
+   box-shadow:         inset 0 0 7px darkgrey;
+}
+.modb_zg_add{
+    font-size: 130%;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    margin-right: 0.1em;
+    display: inline-block;
+    width: auto;
+    height: 1.5em;
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+    text-decoration: none;
+    background-color: seagreen;
+    -moz-box-shadow:    inset 0 0 5px grey;
+   -webkit-box-shadow: inset 0 0 5px grey;
+   box-shadow:         inset 0 0 5px grey;
+    border-radius: 10px;
+}
+.modb_zg_add:hover{
+    cursor: pointer;
+    background-color: darkgray;
+   -moz-box-shadow:    inset 0 0 7px darkgrey;
+   -webkit-box-shadow: inset 0 0 7px darkgrey;
+   box-shadow:         inset 0 0 7px darkgrey;
+}
+.modalDialog {
+        display: none;    
+}
+.modalDialog:target {
+        display: block;
+}
+.ob_icon{
+    width: 3vh;
+}
+.ob_izpis{
+    font-size: 2.5vh;
+}
+.ob_con{
+    display: inline-block;
+    width: 30%;
+}
+
+#kamen{
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    max-width: 7vh;
+}
+#und_kmn{
+    position: absolute;
+    text-align: center;
+    display: block;
+    top: 69%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+#ob_kamen{
+    position: fixed;
+    width: 100%;
+    height: 30%;
+    background-color: white;
+}
+#ob_tra{
+    width: 20%;
+}
+#ob_pre{
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid;
+}
+#con_gmb{
+    width: 2.5em;
+}
+#upgrade{
+    text-align: center;
+    width: 80%;
+    height: 34%;
+    left: 10%;
+    margin-right: -50%;
+    top: 5%;
+    border:2px solid gray;
+    background-color: lightgray;
+}
+.top_izpis{
+    display: inline-block;
+    width: 6em;
+    height: 2em;
+}
+#unw_matter{
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+#unw_matter:hover{
+    background-color: lightgray;
+}
+#unw_drop_pick{
+    z-index: 4;
+    display: none;
+    position: fixed;
+    right: 0.5em;
+    3width: 4.7em;                       
+    font-size: 1.3em;
+    background-color: whitesmoke;
+}
+.unw_choise:hover{
+    background-color: lightgray;
+}
+.st_frame{
+    width: 99%;
+    height: 92.5%;
+    overflow-y: hidden;
+}
+.c_button{
+    cursor: pointer;
+    margin-top: 0.3em;
+    text-align: center;
+    width: 15em;
+    height: 3em;
+    font-size:100%;
+    -moz-box-shadow:    inset 0 0 5px #000000;
+   -webkit-box-shadow: inset 0 0 5px #000000;
+   box-shadow:         inset 0 0 5px #000000;
+    background-color: black;
+    color:whitesmoke;
+    
+}
+#up_showhide{
+    z-index: 1;
+    position: fixed;
+    cursor: pointer;
+    margin-top: 1.4em;
+    margin-left: 0.5em;
+    padding-top: 0.2em;
+    text-align: center;
+    width: 1.4em;
+    height: 1.3em;
+    font-size:200%;
+    -moz-box-shadow:    inset 0 0 5px #000000;
+   -webkit-box-shadow: inset 0 0 5px #000000;
+   box-shadow:         inset 0 0 5px #000000;
+    background-color: black;
+    color:whitesmoke;
+    border-radius: 10px;
+}
+
+.c_button:hover{
+    cursor: pointer;
+    width: 15em;
+    height: 3em;
+    font-size:99%;
+    -moz-box-shadow:    inset 0 0 7px #000000;
+   -webkit-box-shadow: inset 0 0 7px #000000;
+   box-shadow:         inset 0 0 7px #000000;
+    background-color: seagreen;
+    color:whitesmoke;
+}
+#zgd_sh_buttons{
+    display: none;4
+    position: fixed;
+    background-color: whitesmoke;
+    width:94%;
+}
+#inven{
+    position: fixed;
+    display: flex;
+    top:36%;
+    height: 10%;
+    width: 100%;
+    background-color: gray;
+    border: 1px solid; 
+}
+#elements{
+    position: fixed;
+    display: flex;
+    top:30%;
+    height: 10%;
+    width: 100%;
+    background-color: lightgray;
+    border: 1px solid; 
+}
+.element_el{
+    min-width: 3em;
+    height: 3em;
+    margin: 0.2em;
+    border: 1px solid red;
+}
+.inven_el{
+    min-width: 3.5em;
+    height: 3.5em;
+    margin: 0.25em;
+    border: 1px solid red;
+}
+#vesolje{
+    position: fixed;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 56.6%;
+    margin-right: -50%;
+    top: 43%;
+    border:2px solid gray;
+    background-color: lightgray;
+    z-index: 0;
+}
+.vesolje_el{
+    display: flex;
+    min-width: 10em;
+    height: 10em;
+    margin: 0.5em;
+    border: 1px solid;
+}
+/*Animation*/
+@keyframes converting {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+

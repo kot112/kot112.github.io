@@ -1,0 +1,353 @@
+body{
+    
+    background-color:darkolivegreen ;
+    margin:0 auto;
+    width: 100%;
+    overflow: hidden;
+    -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+    
+}
+
+#cce{
+    background-color:bisque ;
+    height: 100%;
+    -moz-box-shadow:     0 0 25px #000000;
+    -webkit-box-shadow: 0 0 25px #000000;
+    box-shadow:        0 0 25px #000000;
+    
+}
+
+#banner{
+    position: absolute;
+    width: 100%;
+    height: 4em;;
+    font-size: 40px;
+    background-color: darkslategrey;
+    color:white;
+    text-align: center;
+}
+
+#top{
+    top: 10em;
+    position: absolute;
+    width: 100%;
+    border-bottom: solid;
+    display: flex;
+}
+#slika_seka{
+    border: solid;
+    -webkit-border-image: url(Slike/border.png) 30 round;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    height: 150;
+}
+.top{
+    float:left;
+    width: 15em;
+    height: 15em;
+    margin-left: 4%;
+    margin-top: 1%;
+}
+#modal_button{
+    width: 10em;
+    height:20em;
+    position: fixed;
+    margin-top: 30em;
+    right: 0;
+    z-index: 1;
+    
+}
+
+#modb{
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    font-size:200%;
+    text-decoration: none;
+    background-color: darkgreen;
+    color:whitesmoke;
+    margin-bottom: 2;
+     float:right;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    
+}
+
+#modb:hover{
+    width: 120%;
+    height: 20%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+   
+}
+
+#modb a{
+    text-decoration: none;
+    color:whitesmoke;
+    
+}
+
+#modb:visited{
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+#modal_stuff{
+    width: 84%;
+    height: 430;
+        position: absolute;
+        margin:0 auto;
+    margin-top: 460;
+    padding-left: 1em;
+    background-color: antiquewhite
+}
+.modalDialog {
+        display: none;    
+    }
+    .modalDialog:target {
+        display: block;
+ 
+    }
+    .close {
+        background: #606061;
+        color: #FFFFFF;
+        line-height: 25px;
+        width:25px;
+        position: relative;
+        left:720;
+        top:20;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        -moz-box-shadow: 1px 1px 3px #000;
+        -webkit-box-shadow: 1px 1px 3px #000;
+        box-shadow: 1px 1px 3px #000;
+  
+    }
+    .close:hover { background: #00d9ff; }      
+
+#gradd{
+    display: none;
+}
+
+#grad:hover #gradd{
+    display: block;
+}
+#prog{
+   width:40%; height:10%; background:#000; border:#000 1px solid;  
+}
+
+#prog > #progs{
+    position: relative; top:0%; background-color:darkseagreen; width:0%; height:100%; color: whitesmoke; text-align:center; 
+}
+
+#prog > $progt{
+    position: relative; top:-19px; text-align:center; color:black; padding: 1%; height:3%; font-size:2%; 
+}
+
+
+#prv{
+   width:40%; height:10%; background:#000; border:#000 1px solid;  
+}
+
+#prv > #prev{
+    position: relative; top:0%; background-color:darkseagreen; width:0%; height:100%; color: whitesmoke; text-align:center; 
+}
+
+#prv > $prevo{
+    position: relative; top:-19px; text-align:center; color:black; padding: 1%; height:3%; font-size:2%; 
+}
+
+
+
+.stat{
+    float:inherit;
+    margin-bottom: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    border-bottom: solid;
+}
+
+
+#top .gumb{
+    cursor: pointer;
+    text-align: center;
+    width: 90%;
+    height: 15%;
+    font-size:90%;
+    -moz-box-shadow:    inset 0 0 5px #000000;
+   -webkit-box-shadow: inset 0 0 5px #000000;
+   box-shadow:         inset 0 0 5px #000000;
+    background-color: darkgreen;
+    color:whitesmoke;
+}
+
+#top .gumb:hover{
+    cursor: pointer;
+    width: 90%;
+    height: 15%;
+    font-size:76%;
+    -moz-box-shadow:    inset 0 0 5px #000000;
+   -webkit-box-shadow: inset 0 0 5px #000000;
+   box-shadow:         inset 0 0 5px #000000;
+    background-color: seagreen;
+    color:whitesmoke;
+}
+
+.gumb{
+    cursor: pointer;
+    text-align: center;
+    width: 15em;
+    height: 3em;
+    font-size:100%;
+    -moz-box-shadow:    inset 0 0 5px #000000;
+   -webkit-box-shadow: inset 0 0 5px #000000;
+   box-shadow:         inset 0 0 5px #000000;
+    background-color: darkgreen;
+    color:whitesmoke;
+    
+}
+
+.gumb:hover{
+    cursor: pointer;
+    width: 15em;
+    height: 3em;
+    font-size:90%;
+    -moz-box-shadow:    inset 0 0 7px #000000;
+   -webkit-box-shadow: inset 0 0 7px #000000;
+   box-shadow:         inset 0 0 7px #000000;
+    background-color: seagreen;
+    color:whitesmoke;
+}
+
+.nadgradnja{
+    float:left;
+}
+
+#nadgradnje .gumb{
+    width: 200;
+    margin-left:5;
+    margin-top: 5;
+    display: block;
+}
+
+#nadgradnje .gumb:hover{
+    background-color: seagreen;
+}
+
+#loo{
+    position: absolute;
+    float:right;
+    top:50;
+    left:440;
+}
+
+#rel{
+    position: absolute;
+    float:right;
+    top:100;
+    left:440;
+}
+
+
+
+#stt{
+    position: absolute;
+    top:50;
+}
+
+#dvig{
+    position: absolute;
+    float:right;
+    left:300;
+    top:115;
+}
+
+
+.seka{
+    background-image: url(Slike/les1.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 50%;
+    height: 90%;
+    
+}
+
+.seka:active{
+    background-image: url(Slike/les2.png) ;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 50%;
+    height: 90%;
+}
+
+
+.izpis{
+    font-size:25;
+}
+
+footer{
+    position: relative;
+    top:900;
+    width: 1000;
+    text-align: center;
+    background-color: darkslategray;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+    margin:25;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
