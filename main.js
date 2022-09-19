@@ -3,7 +3,6 @@
 //file formats .pdf, .jpg, .hmtl, empty for special manual
     var project = [
         ["Info", 1, "download/Info.html"],
-        ["Življenjepis", 1, ".pdf"],
         ["Primer", 2, ".pdf"],
         ["PrimerSLK", 2, ".jpg"],
         ["Chopie", 1, ".html"],
